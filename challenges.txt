@@ -1,0 +1,6 @@
+Challenges and Decisions:
+- Partially because it was my initial thought, I check for unique values using a set. I like that it's faster for checking and that I can
+minimize db connections.
+- I previously saved the db connection credentials and information in a Properties file. Now I can just reference them in the code without
+writing them explicitly in the code that gets shared.
+- I store the names in the set in all lowercase so my checking can be case-insensitive
